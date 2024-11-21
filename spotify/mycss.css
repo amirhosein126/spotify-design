@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "yekan";
+
+  font-style: normal;
+
+  src: url(../webfonts/Yekan.woff) format('woff2');
+}
+
+.shado-costom{
+    box-shadow: 0 4px 10px -3px #000;
+    
+}
+.item-w-grop > div{
+    height: 4rem;
+    width:18.5rem;
+}
+@media (min-width:768px) and (max-width:1024px){
+ 
+  .item-w-grop{
+    gap:3;
+  }
+  .last-child > div>div:nth-child(2n+2){
+    display:none;
+
+  }
+  .heder-info{
+    
+  }
+}
+@media (min-width:768px) and (max-width:1280px){
+  .group{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+  }
+  .item-w-grop > div{
+    width:100%;
+    display:flex;
+    height:3rem;
+
+  }
+  .div-p{
+    width:60rem;
+    
+  }
+  .last-child > div>div:nth-child(2n+4){
+    display:none;
+
+  }
+  .respo{
+    width:100%;
+    display:flex;
+    
+  }
+  .respo section div{
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    
+  }
+}
+@media (min-width:1280px) and(max-width:1536px){
+ 
+}
+
+@media (min-width:1280px){
+  .item-w-grop > div{
+    width:100%;
+    display:flex;
+    height:3rem;
+
+  }
+  .div-p{
+    width:100%;
+    
+  }
+  .respo section div{
+    width:10rem;
+  }
+}
+@media (min-width:1536px){
+  .item-w-grop > div{
+    height: 4rem;
+    width:100%;
+}
+  section > div{
+    gap:0.75rem;
+  }
+  .div-p{
+    width:100%;
+    
+  }
+
+}
+ 
+:root{
+  
+}
+.none{
+  display:none;
+}
+.shado{
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+}
+.play{
+  display:black;
+}
+.stop{
+  display:none;
+}
+html{
+  scrollbar-width:normal;
+  scrollbar-color:#777 #555;
+
+}
+::-webkit-scrollbar{
+  width:0.8vw;
+  overflow-x:none;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(0,0,0);
+  background: linear-gradient(240deg, rgba(0,0,0,1) 0%, rgba(135,135,135,0.6766165939031863) 0%);
+}
+
+::-webkit-scrollbar-track{
+  background-color:#1a1a1a;
+  border-bottom-left-radius:0.5rem;
+  
+}
+
+.text-just{
+ color:#b1b1b1;
+}
+.scrool::-webkit-scrollbar-track{
+  border-top-left-radius:0.5rem;
+}
+div span{
+  cursor:pointer;
+}
+.span-hover span:hover{
+  color:white;
+}
+.ul-playlist li{
+  cursor:pointer;
+}
+.box{
+  
+}
+
+.hover-div {
+  position: absolute;
+  bottom: -1%; /* نیم رم پنهان */
+  border-radius:100%;
+  opacity: 0;
+  transition: bottom 0.6s, opacity 1s;
+}
+.btn-chin{
+  width:auto;
+  height:5rem;
+  margin:5px;
+  background:#FF8763;
+  border-radius:.5rem;
+  font-size:3rem;
+}
